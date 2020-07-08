@@ -1,0 +1,27 @@
+Package: noce
+Title: Number Of Construction from E-state
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Syunsuke",
+           family = "Fukuda",
+           role = c("aut", "cre"),
+           email = "syunsuke.fukuda@gmail.com")
+Description: This package has tools for making data of number of construction. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Imports: 
+    stringr,
+    dplyr,
+    tibble,
+    estatapi,
+    lubridate,
+    magrittr,
+    readxl,
+    rlang
+Suggests: 
+    testthat
+Depends: 
+    R (>= 2.10)
