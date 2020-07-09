@@ -1,9 +1,9 @@
 #' download files for data of number of construction
 #'
 #' This function downloads excel files for data of number of construction
-#' from e-state site.
+#' from e-stat site.
 #'
-#' @param appID e-state application id
+#' @param appID e-stat application id
 #' @param table table number string of which you want data
 #' @param dist_path a directory that download files were put in
 #' @param all_files whether you need to download all files or not

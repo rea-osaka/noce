@@ -7,7 +7,7 @@
 noce_download_excel_files(appID, table, dist_path = "./", all_files = FALSE)
 }
 \arguments{
-\item{appID}{e-state application id}
+\item{appID}{e-stat application id}
 
 \item{table}{table number string of which you want data}
 
@@ -20,5 +20,5 @@ nothing
 }
 \description{
 This function downloads excel files for data of number of construction
-from e-state site.
+from e-stat site.
 }

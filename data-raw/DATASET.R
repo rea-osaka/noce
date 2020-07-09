@@ -3,16 +3,16 @@ library(noce)
 library(tidyverse)
 
 #############################################################
-# download target excel files from e-stats
+# download target excel files from e-stat
 #############################################################
 
 dlfiles_path <- "data-raw/t15_excelfiles/"
 
 # filedownload
-# keyring::key_set("e-stat")
-# noce::noce_download_excel_files(appID = keyring::key_get("e-stat"),
-#                                 table = "15",
-#                                 dist_path = dlfiles_path)
+keyring::key_set("e-stat")
+noce::noce_download_excel_files(appID = keyring::key_get("e-stat"),
+                                table = "15",
+                                dist_path = dlfiles_path)
 
 excelfiles <- dir(dlfiles_path, full.names = T)
 
