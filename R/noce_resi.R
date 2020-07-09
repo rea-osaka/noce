@@ -66,7 +66,7 @@ noce_residence_read_files <- function(file_path_v){
                   .data$cat01_code, .data$`利用関係`,
                   .data$cat02_code, .data$`工事`,
                   .data$area_code, .data$`地域`,
-                  .data$time_code, .data$`時間軸(月次)`,
+                  .data$time_code, .data$`時間軸(月次)`, .data$date,
                   .data$unit,
                   .data$value) %>%
     dplyr::mutate(value = as.numeric(.data$value))
