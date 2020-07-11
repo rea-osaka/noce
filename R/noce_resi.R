@@ -69,7 +69,11 @@ noce_residence_read_files <- function(file_path_v){
                   .data$time_code, .data$`時間軸(月次)`, .data$date,
                   .data$unit,
                   .data$value) %>%
-    dplyr::mutate(value = as.numeric(.data$value))
+    dplyr::mutate(value = as.numeric(.data$value),
+                  `利用関係` = factor(.data$`利用関係`, 
+                                  levels = c("給与住宅", "持家", "貸家" ,"分譲住宅", "計")),
+                  `工事` = factor(.data$`工事`, 
+                                  levels = c("新設", "その他", "計")))
 
   return(ans)
 }
